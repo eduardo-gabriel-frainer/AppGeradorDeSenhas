@@ -1,0 +1,116 @@
+body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .background {
+            display: flex;
+            /* Ativa o Flexbox */
+            flex-direction: column;
+            /* Organiza os itens na coluna */
+            justify-content: center;
+            /* Alinha verticalmente no centro */
+            align-items: center;
+            /* Alinha horizontalmente no centro */
+            width: 100%;
+            height: 100%;
+            background-color: rgb(3, 31, 51);
+        }
+
+        h1 {
+            color: rgb(52, 130, 232);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        h3 {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding-top: 20px;
+            font-size: 25px;
+        }
+
+        .tela {
+            background-color: rgb(255, 255, 255);
+            height: 50px;
+            width: 300px;
+            margin-top: 40px;
+            border-radius: 25px;
+        }
+
+        h4 {
+            color: rgb(52, 130, 232);
+            font-size: 25px;
+        }
+
+        .slider {
+            width: 300px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .slider-value {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            /* Define o tamanho do círculo */
+            height: 30px;
+            /* Define o tamanho do círculo */
+            border: 2px solid rgb(52, 130, 232);
+            /* Borda preta */
+            border-radius: 50%;
+            /* Faz com que o elemento tenha formato circular */
+            font-size: 18px;
+            /* Tamanho da fonte */
+            color: rgb(255, 255, 255);
+            /* Cor do texto */
+            background-color: rgb(52, 130, 232);
+            /* Cor de fundo */
+        }
+
+        /* Organizando os checkboxes horizontalmente */
+        .checkbox-container {
+            display: flex;
+            justify-content: center; /* Centraliza os checkboxes */
+            gap: 20px; /* Espaçamento entre os checkboxes */
+           
+        }
+
+        .checkbox-container label {
+            display: flex;
+            align-items: center;
+            color: rgb(255, 255, 255); /* Cor do texto dos checkboxes */
+            font-size: 16px;
+            transform: scale(1.5);
+        }
+
+        .botoes input[type="button"] {
+            font-size: 18px; /* Aumenta o tamanho da fonte */
+            width: 150px; /* Largura fixa */
+            height: 40px; /* Altura fixa */
+            border-radius: 10px; /* Bordas arredondadas */
+            background-color: rgb(52, 130, 232); /* Cor de fundo */
+            color: white; /* Cor do texto */
+            border: none; /* Remove borda */
+            cursor: pointer; /* Cursor tipo mão */
+            transition: background-color 0.3s; /* Efeito de transição */
+            margin-top: 40px;
+        }
+        
+        .botoes input[type="button"]:hover {
+            background-color: rgb(30, 100, 190); /* Cor de fundo ao passar o mouse */
+        }
+
+        .botoes input#gerar {
+            margin-right: 10px; /* Adiciona espaçamento à direita */
+        }
+        
+        .botoes input#copiar {
+            margin-left: 10px; /* Adiciona espaçamento à esquerda */
+        }
+        
