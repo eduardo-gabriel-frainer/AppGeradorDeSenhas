@@ -64,6 +64,12 @@ const copiar = document.getElementById('copiar');
 
 copiar.addEventListener('click', () => {
     navigator.clipboard.writeText(password.value);
+    copiar.value = 'Copiado';
+
+    setTimeout(() => {
+        copiar.value = 'Copiar';
+    }, 2000);
+
 })
 
 
