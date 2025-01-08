@@ -1,6 +1,6 @@
 # App Gerador de Senhas
 
-###Desenvolvido em:
+Desenvolvido em:
 * JavaScript
 * Css
 * Html
