@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gerador de Senhas</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -12,57 +12,43 @@
 <body>
 
     <div class="background">
+        <div class="container">
+            <h1>Gerador de <br>Senhas Aleatórias</h1>
+            <h3>Proteja suas senhas de internet criando <br>senhas fortes e seguras!!!</h3>
+            <div class="tela" id="tela"></div>
 
-        <h1 >Gerador de <br>Senhas Aleatórios</h1>
+            <h4>Quantidade de caracteres</h4>
+            <input type="range" min="1" max="20" value="10" class="slider" id="caracteresSlider">
+            <div class="slider-value" id="sliderValue">10</div>
 
-        <h3>Proteja suas senhas de internet criando <br>senhas fortes e seguras!!!</h3>
+            <h4>Caracteres Utilizados</h4>
+            <div class="checkbox-container" id="checkbox-container">
+                <label>
+                    <input type="checkbox" id="numbers" name="numbers" value="numbers">
+                    123
+                </label><br>
+                <label>
+                    <input type="checkbox" id="lowercase" name="lowercase" value="minusculas">
+                    abc
+                </label><br>
+                <label>
+                    <input type="checkbox" id="uppercase" name="uppercase" value="uppercase">
+                    ABC
+                </label><br>
+                <label>
+                    <input type="checkbox" id="special" name="special" value="special">
+                    !@#$
+                </label><br>
+            </div>
 
-        <div class="tela"></div>
-
-        <h4>Quantidade de caracteres</h4>
-
-        <!-- Barra deslizante -->
-        <input type="range" min="1" max="20" value="10" class="slider" id="caracteresSlider">
-        <div class="slider-value" id="sliderValue">10</div>
-
-        <h4>Caracteres Utilizados</h4>
-
-        <div class="checkbox-container">
-            <label>
-                <input type="checkbox" id="numeros" name="numeros" value="numeros">
-                123
-            </label><br>
-
-            <label>
-                <input type="checkbox" id="minusculas" name="minusculas" value="minusculas">
-                abc
-            </label><br>
-
-            <label>
-                <input type="checkbox" id="maisculas" name="maisculas" value="maisculas">
-                ABC
-            </label><br>
-            <label>
-                <input type="checkbox" id="especiais" name="especiais" value="especiais">
-                !@#$
-            </label><br>
+            <div class="botoes">
+                <input type="button" id="gerar" name="gerar" value="Gerar">
+                <input type="button" id="copiar" name="copiar" value="Copiar">
+            </div>
         </div>
+    </div>
 
-        <div class="botoes">
-            <input type="button" id="gerar" name="gerar" value="gerar" >
-
-            <input type="button" id="copiar" name="copiar" value="copiar" >
-        </div>
-
-        <script>
-            const slider = document.getElementById("caracteresSlider");
-            const sliderValue = document.getElementById("sliderValue");
-
-            // Atualiza o valor mostrado ao lado do slider
-            slider.addEventListener("input", function () {
-                sliderValue.textContent = slider.value;
-            });
-        </script>
+    <script src="script.js"></script>
 
 </body>
 
