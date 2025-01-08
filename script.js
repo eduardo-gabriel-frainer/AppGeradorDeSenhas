@@ -1,3 +1,4 @@
+// O objeto password armazena dados e métodos relacionados à geração da senha
 
 const password = {
     value: '',
@@ -50,6 +51,7 @@ function pwdGenerator(){
     }
 
     password.length = pwdSlider.value;
+    //Chama o método generate do objeto password e exibe a senha gerada na tela.
     pwdContent.textContent = password.generate(chars);
 
 }
@@ -60,6 +62,7 @@ for(let i = 0; i < pwdInputChars.length; i++){
     pwdInputChars[i].addEventListener('change', pwdGenerator);
 }
 
+//Botão Copiar
 const copiar = document.getElementById('copiar');
 
 copiar.addEventListener('click', () => {
